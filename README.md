@@ -10,7 +10,6 @@
 
     ```
     $ git@github.com:pasangsherpa/docker-kibana.git
-    $ cd docker-kibana
     ```
 
 ## Configure 
@@ -27,8 +26,6 @@
 
 
 ## Build and run Kibana without [Vagrant][6]
-
-1. Build and run [kibana][4] service.
 
     ```
     $ cd docker-kibana
