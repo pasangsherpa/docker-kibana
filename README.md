@@ -1,4 +1,4 @@
-# docker-elk
+# docker-kibana
 
 > Dockerized Kibana.
 
@@ -14,7 +14,7 @@
 
 ## Configure 
 
-1. [Kibana][4] configuration file can be found under 'config' folder. Make changes to the kibana.yml file as per your need.
+1. [Kibana][4] configuration file can be found under 'config' folder. Make changes to the 'kibana.yml' file as per your need.
 
 
 ## Build and run Kibana with [Vagrant][6]
