@@ -4,6 +4,14 @@
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.require_version ">= 1.6.3"
 
+$script = <<SCRIPT
+  
+  cd /vagrant
+  docker build -t kibana .
+  docker run kibana
+
+SCRIPT
+
 # All Vagrant configuration is done below. The VAGRANTFILE_API_VERSION
 # in Vagrant.configure configures the configuration version (we support
 # older styles for backwards compatibility). Please don't change it unless
@@ -29,5 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Enable Docker provisioning
   config.vm.provision "docker"
+
+  config.vm.provision "shell", inline: $script
 
 end
