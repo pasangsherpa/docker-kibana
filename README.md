@@ -1,6 +1,6 @@
-# docker-kibana
+# kibana
 
-> Dockerized Kibana.
+> Dockerized Kibana. [Kibana | Explore & Visualize Your Data][4]
 
 ## Installation and Setup
 
@@ -9,7 +9,7 @@
 2. Next, clone the project.
 
     ```
-    $ git@github.com:pasangsherpa/docker-kibana.git
+    $ git@github.com:pasangsherpa/kibana.git
     ```
 
 ## Configure 
@@ -20,7 +20,7 @@
 ## Build and run Kibana with [Vagrant][6]
 
     ```
-    $ cd docker-kibana
+    $ cd kibana
     $ vagrant up
     ```
 
@@ -28,7 +28,7 @@
 ## Build and run Kibana without [Vagrant][6]
 
     ```
-    $ cd docker-kibana
+    $ cd kibana
     $ docker build -t kibana .
     $ docker run kibana        # Run in foreground    
     $ docker run kibana -d     # Run in background
