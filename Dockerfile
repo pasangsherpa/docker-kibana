@@ -7,6 +7,8 @@
 # Pull base image.
 FROM java:7-jre
 
+MAINTAINER Pasang Sherpa "https://github.com/pasangsherpa"
+
 ENV KIBANA_PKG_NAME kibana-4.0.2-linux-x64
 
 # Grab gosu for easy step-down from root
