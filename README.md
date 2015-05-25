@@ -2,6 +2,25 @@
 
 > Dockerized Kibana. [Kibana | Explore & Visualize Your Data][4]
 
+
+
+# How to use the [pre-built image][8] from Docker Hub Registry?
+
+1. Start the instance.
+
+	```
+	$ docker run --name kibana -p 5601:5601 pasangsherpa/kibana
+	```
+
+2. Start the instance by passing in custom config. The config volume should include 'kibana.yml' file.
+
+	```
+	$ docker run --name kibana -p 5601:5601 -v "$PWD/config":/opt/kibana/config pasangsherpa/kibana
+	```
+
+
+# Build and setup the image from scratch.
+
 ## Installation and Setup
 
 1. First, Install [Docker][1] **OR** Install [Vagrant][6] and [Virtualbox][7].
@@ -49,3 +68,4 @@
 [5]: https://www.elastic.co/guide/en/logstash/current/plugins-inputs-lumberjack.html
 [6]: http://www.vagrantup.com/downloads.html
 [7]: https://www.virtualbox.org/wiki/Downloads
+[8]: https://registry.hub.docker.com/u/pasangsherpa/kibana/
