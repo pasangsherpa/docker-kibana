@@ -4,7 +4,7 @@
 
 
 
-# How to use the [pre-built image][8] from Docker Hub Registry?
+## Use the [pre-built image][8] from Docker Hub Registry.
 
 1. Start the instance.
 
@@ -18,8 +18,9 @@
 	$ docker run --name kibana -p 5601:5601 -v "$PWD/config":/opt/kibana/config pasangsherpa/kibana
 	```
 
+3. Go to [http://localhost:5601](http://localhost:5601) to verify kibana is running.
 
-# Build and setup the image from scratch.
+===
 
 ## Installation and Setup
 
