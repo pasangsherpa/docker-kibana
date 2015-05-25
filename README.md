@@ -2,7 +2,7 @@
 
 > Dockerized Kibana. [Kibana | Explore & Visualize Your Data][4]
 
-
+If you want the whole ELK stack, checkout [elk-stack](https://github.com/pasangsherpa/elk-stack).
 
 ## Use the [pre-built image][8] from Docker Hub Registry.
 
